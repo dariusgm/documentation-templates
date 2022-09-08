@@ -12,7 +12,7 @@ This README.md glues everything together, as meta documentation for
 the documentation templates.
 
 TL;DR: Use `general.md` for documenting general topics and `repository.md`
-as repository specific documentation. Feel free to rename `repository.md` to `README.md` in your repository.
+as repository / project specific documentation. Feel free to rename `repository.md` to `README.md` in your repository.
 
 # How is your audience that you want to address?
 
@@ -31,9 +31,13 @@ Other documentation should in the README.md of the appropriate repository.
 The rule of thumb: Is this information relevant only for a specific project,
 or is in general enough to put it in a general documentation.
 
-"But I don't need everything" - that is totally fine. Just skip it and leave
-the block blank. Maybe in the future you will add documentation their.
+"But I don't need everything" - that is totally fine. Just skip it and write "skipped". Maybe in the future you will add documentation their.
+
+# general.md
+This is a template to documenting topics that are imo project independent. Its enough to document them once.
+
+# repository.md
+This template should be copied to every repository your team is responsible of end filled accordingly with the required information.
 
 # Final Words
-
 Documentation have to be taken care. Update it as often as possible.

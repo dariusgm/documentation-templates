@@ -1,50 +1,42 @@
 # general documentation for company example
 
-## Onboarding
+This is just a [template](https://github.com/dariusgm/documentation-templates).
 
-You have somebody new in your company and they want to start working.
-They can either be in your team, so they need a very detail explanation of
-the pieces of software the team is using. When they are not in your team,
-they may only need a high level overview what your team is doing.
+You may not need every aspect of the template, but they give you an idea what *can* be documented in your projects.
 
-In both cases they need to setup their environment first before they
-can start any work. This installation requires in general 3 steps:
+    Good documentation reflect any granularity of your project.
 
-* Pre Installation
-* Installation
-* Post Installation
-
-### Pre Installation
+## Pre Installation
 
 This section describe topics that need to be done before you can install anything. For example, how you get the hardware, credentials for login.
 
-### Installation
+## Installation
 
-Here you define the actual installation steps.
+Here you define the actual installation steps, reference a script or
+a framework that does the installation required.
 
-    Hint: Build a Dockerfile that tests your installation steps.
+Take into account that you may need to support different operating systems.
+Run this installation steps against a Dockerfile in a CI environment, to
+make sure its updated and running. When commands can't be tested on CI,
+use `|| true` to ignore the status code of the previous command. Use it
+with caution.
 
-### Post Installation
 
-Some tasks can not be done in an automatic fashion. You may need to enter
-user specific credentials or even generate something by yourself.
+## Post Installation
+
+Some tasks can not be done in an automatic fashion.
+You may need to enter user specific credentials or even generate something by yourself.
 This steps should be written in this area.
 
-- Codestyle
-- IDE Settings (Memory?)
-
-# Team Documentation
-
-After you have your applications up and running, you can start to write
-documentation about topics that are related to *you* or *your team*.
-
-In general we can't remember everything, especially when some time passes.
-Writing a team documentation can be helpful for you as well - you can be
-the one that forgot how to do something and look it up again.
+Also setting up the recommended editor(s) with their settings can help
+in the collaboration. This can be from code style to editor memory settings.
 
 ## Snippets
 
-A Team Documentation can also have different levels of granularity.
-The first one are `snippets` - its a chunk of program that is used quite
-often but is not easy to remember.
+And here is some space for writing down snippets. Remember, this are
+code chunks and need to be "completed" by somebody using them.
+* What are you regularly running that may be forgotten as its long or complicated?
+* What are pattern you are using for reading or writing files?
+* What you use to do argument parsing?
 
+[source](https://github.com/dariusgm/documentation-templates)

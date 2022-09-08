@@ -1,28 +1,20 @@
 # project-name
 
-This README.md is inspired by this [template](https://github.com/dariusgm/documentation-templates).
+This is just a [template](https://github.com/dariusgm/documentation-templates).
 
-You may not need every aspect of the templates, but they give you an idea what *can* be
-documented in your projects.
+You may not need every aspect of the template, but they give you an idea what *can* be documented in your projects.
 
     Good documentation reflect any granularity of your project.
 
-"But I don't need everything" - that is totally fine. Just skip it and leave
-the block blank. Maybe in the future you will add documentation their.
-
-For more general information, see [general](general.md)
-
 
 # Team Documentation
-
-
 ## Snippets
 
 ### Example 1
 This snippets extract a list of directories.
 
 ```bash
-ls -dl /home/darius/*/ | awk -F'[[:space:]]' '{print $NF}' | bash
+ls -dl /home/darius/*/ | awk -F'[[:space:]]' '{print $NF}'
 ```
 
 ## Code Documentation
@@ -59,6 +51,9 @@ brew install java@11
 ### Environment variables
 set DEBUG=1 to enable debugging.
 
+### config file
+place a `debug.conf` file in the project root for setting up the database settings.
+
 ## Secrets
 
 The credentials for accessing the servers can be found in the
@@ -86,9 +81,13 @@ ssh -i key.pem -N -L 8156:127.0.0.1:8156 root@example.com
 
 How deployment is triggered?
 
+Deployment is triggered after every main commit via jenkins.
+
 ## Tests
 
 How tests need to be executed?
+
+Tests are executed for each open Pull Request / Merge Request via jenkins.
 
 ## FAQ
 
@@ -124,6 +123,8 @@ What Frameworks are used?
 ## Architecture / Design
 * Why this architecture was selected?
 * What design where discusses but not selected and why?
+
+Maybe you can add a nice diagram using `puml` how its working?
 
 ## Monitoring
 * What monitoring is applied for the service and what metrics are most important?
@@ -171,8 +172,7 @@ How does the data model look like?
 * Keys and values with their types.
 
 #### error data model
-What is returned in case of errors? What errors are can be returned by the api?
-
+What is returned in case of errors? What errors are can be returned by the API?
 
 ## Manual / Tutorial
 Description of how to use the software in case you have some frontend.
@@ -183,3 +183,5 @@ When you provide libraries or any other artifacts that can be included by the us
 
 # Final Words
 Documentation have to be taken care. Update it as often as possible.
+
+[source](https://github.com/dariusgm/documentation-templates)
